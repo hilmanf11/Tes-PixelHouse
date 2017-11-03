@@ -1,0 +1,40 @@
+
+<!--
+Test Program
+Pixel Studio Bandung
+Hilman Fadillah
+01 November 2017
+-->
+<body>
+    <div class="isi">
+        <form method="post" action="conf/save.php" enctype="multipart/form-data">
+            <div class="layout_profil">
+                <center>
+                    <img src="image/icon.png" id="previewing" class="foto_profil">
+                    <br><br>    
+                    <label class="btn-upload"> Upload
+                        <input accept=".jpg,.jpeg,.gif,.png" id="upload" style="display: none;" name="upload" type="file" onchange="this.value.split('\\').pop().split('/').pop(); readURL(this);">
+                    </label>
+                </center>
+            </div>
+            <div class="layout_profil_kanan">
+                <div class="jarak" hidden>
+                    <input class="textbox_profile" placeholder="ID" name="profile_id" id="profile_id">
+                </div>
+                <div class="jarak">
+                    <input class="textbox_profile" placeholder="Email" name="profile_email" id="profile_email">
+                </div>
+                <div class="jarak">
+                    <input class="textbox_profile" placeholder="Nama" name="profile_nama" id="profile_nama">
+                </div>
+                <div class="jarak">
+                    <input class="textbox_profile" type="password" placeholder="Password" name="profile_pass" id="profile_pass">
+                </div>
+                 <div class="jarak_button">
+                    <button type="submit" name="save" class="btn-profile">Save</button>
+                    <button type="button" class="btn-profile" onclick="kembali()">Back</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

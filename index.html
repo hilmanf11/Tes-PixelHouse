@@ -1,0 +1,56 @@
+
+<!--
+Test Program
+Pixel Studio Bandung
+Hilman Fadillah
+01 November 2017
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Twitter Application | Pixel Studio</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/proses.js" language="JavaScript" type="text/javascript"></script>
+        <script src="js/jquery.js" language="JavaScript" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>Twitter Application</header>
+        <div class="isi">
+            <form method="post">
+                <div class="center">
+                    <h3>LOGIN</h3>
+                    <div class="jarak">
+                        <input placeholder="Email" type="email" id="email_log" class="textbox">
+                    </div>
+                    <div class="jarak">
+                        <input placeholder="Password" type="password" id="pass_log" class="textbox">
+                    </div>
+                    <div class="jarak_button">
+                        <button type="button" class="btn" onclick="login()">Login</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <form method="post" id="frm_register" autocomplete="off">
+                <div class="center">
+                    <h3>REGISTER</h3>
+                    <div class="jarak">
+                        <input placeholder="Email" type="email" onkeyup="email(this)" id="email_regist" class="textbox">
+                        <i id="email_notif"></i>
+                    </div>
+                    <div class="jarak">
+                        <input placeholder="Name" type="text" id="name_regist" class="textbox">
+                    </div>
+                    <div class="jarak">
+                        <input placeholder="Password" type="password" id="pass_regist" class="textbox">
+                    </div>
+                    <div class="jarak_button">
+                        <button type="button" class="btn" onclick="register()">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
